@@ -1,10 +1,20 @@
 # jTox
-A Java Tox Client
+JTox is a chat application I started writing a few years ago. It was going to use the Tox library, and was never finished but, shows some skills with java, javafx, SQLite, and JDBC.
 
-Progress:
+## Build/Run Instructions:
+**Linux**:
 
-Working on javafx gui : In Progress
+```
+git clone https://github.com/abueide/jTox.git
+cd jTox
+./gradlew build
+./gradlew run
+```
 
-Working on backend    : Not started
-
-Implementing toxcore  : Not started
+**Windows**
+```
+git clone https://github.com/abueide/jTox.git
+cd jTox
+gradlew.bat build
+gradlew.bat run
+```
