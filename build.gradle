@@ -1,0 +1,28 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+group = "abueide.jtox"
+version = "0.1-SNAPSHOT"
+mainClassName = "abueide.jtox.ui.jfx.GUIMain"
+applicationDefaultJvmArgs = ["-Dgreeting.language=en"]
+sourceSets.main.java.srcDirs = ['src']
+
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+  compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.4'
+  compile group: 'org.xerial', name: 'sqlite-jdbc', version: '3.8.11.2'
+  compile group: 'de.jensd', name: 'fontawesomefx', version: '8.9'
+}
+
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'Gradle Quickstart',
+                   'Implementation-Version': version,
+                   'Main-Class': mainClassName
+    }
+}

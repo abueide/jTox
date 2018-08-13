@@ -31,7 +31,7 @@ public class ChatView implements Initializable {
 
         for (Profile profile : profiles) {
             try {
-                FXMLLoader loader = new FXMLLoader(getClass().getClassLoader().getResource("abueide/jtox/ui/jfx/graphical/ProfileView.fxml"));
+                FXMLLoader loader = new FXMLLoader(getClass().getClassLoader().getResource("ProfileView.fxml"));
                 loader.setController(new ProfileView(profile));
                 Tab tabby = new Tab();
                 tabby.setText(profile.getName());
@@ -44,7 +44,7 @@ public class ChatView implements Initializable {
     }
 
     public void display() {
-        FXMLLoader loader = new FXMLLoader(getClass().getClassLoader().getResource("abueide/jtox/ui/jfx/graphical/ChatView.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getClassLoader().getResource("ChatView.fxml"));
         loader.setController(this);
         Parent root;
         try {

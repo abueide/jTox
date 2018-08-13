@@ -70,7 +70,7 @@ public class ProfileSelectionSettingsWindow implements Initializable {
     }
 
     private void display() {
-        FXMLLoader loader = new FXMLLoader(getClass().getClassLoader().getResource("abueide/jtox/ui/jfx/graphical/ProfileSelectionSettingsWindow.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getClassLoader().getResource("ProfileSelectionSettingsWindow.fxml"));
         loader.setController(this);
         Parent root;
         try {

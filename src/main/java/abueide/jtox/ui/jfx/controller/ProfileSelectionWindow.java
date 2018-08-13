@@ -122,8 +122,7 @@ public class ProfileSelectionWindow implements Initializable {
 
     // Window Methods
     public void launch(Stage primaryStage) {
-        FXMLLoader loader = new FXMLLoader(
-                getClass().getClassLoader().getResource("abueide/jtox/ui/jfx/graphical/ProfileSelectionWindow.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getClassLoader().getResource("ProfileSelectionWindow.fxml"));
         loader.setController(this);
         Parent root;
         try {
@@ -138,7 +137,7 @@ public class ProfileSelectionWindow implements Initializable {
 
     public void display() {
         FXMLLoader loader = new FXMLLoader(
-                getClass().getClassLoader().getResource("abueide/jtox/ui/jfx/graphical/ProfileSelectionWindow.fxml"));
+                getClass().getClassLoader().getResource("ProfileSelectionWindow.fxml"));
         loader.setController(this);
         Parent root;
         try {

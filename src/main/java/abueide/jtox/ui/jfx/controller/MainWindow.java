@@ -26,7 +26,7 @@ public class MainWindow implements Initializable {
     }
 
     private void display() {
-        FXMLLoader loader = new FXMLLoader(getClass().getClassLoader().getResource("abueide/jtox/ui/jfx/graphical/MainWindow.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getClassLoader().getResource("MainWindow.fxml"));
         loader.setController(this);
         Parent root;
         try {

@@ -55,7 +55,6 @@ public class GUIMain extends Application {
 
     @Override
     public void stop() {
-
     }
 
 }

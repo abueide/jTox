@@ -29,7 +29,7 @@ public class Util {
     public static List<Profile> getProfiles() {
         List<Profile> profiles = new ArrayList<>();
         File dir = new File(Globals.PREF.get(Globals.PROFILE_DIR, null));
-        for (File file : dir.listFiles((dir1, filename) -> {return filename.endsWith(".jtox");})) {
+        for (File file : dir.listFiles((dir1, filename) -> filename.endsWith(".jtox"))) {
             profiles.add(new Profile(new DataBase(file.getAbsolutePath())));
         }
         return profiles;
@@ -48,7 +48,6 @@ public class Util {
         } catch (IOException e){
             e.printStackTrace();
         }
-
         return new DataBase(file.getAbsolutePath());
     }
 
