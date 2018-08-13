@@ -1,5 +1,5 @@
 # jTox
-JTox is a chat application I started writing a few years ago. It was going to use the Tox library, and was never finished but, shows some skills with java, javafx, SQLite, and JDBC.
+JTox is a chat application I started writing a few years ago. It was going to use the Tox library, but was never finished. It shows some skills with: Java, JavaFX, JDBC, SQLite, and gradle.
 
 ## Build/Run Instructions:
 **Linux**:
